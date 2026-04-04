@@ -1,0 +1,73 @@
+================================================================
+   HEART DISEASE PREDICTION PROJECT - LIBRARIES USED
+================================================================
+
+
+================================================================
+1. TRAINING SCRIPT (heart_disease_training.py)
+================================================================
+
+#   Library          Kya kaam karta hai
+--  ---------------  --------------------------------------------------
+1   pandas           Data loading, DataFrames, CSV read/write
+2   numpy            Numerical operations, arrays
+3   matplotlib       EDA plots, bar charts, boxplots
+4   seaborn          Heatmap, confusion matrix plots
+5   scikit-learn     ML models, scaling, splitting, evaluation
+6   xgboost          XGBoost classifier
+7   joblib           Model save/load (.pkl files)
+
+sklearn se specifically yeh use hua:
+
+  - LogisticRegression         -> Logistic Regression model
+  - RandomForestClassifier     -> Random Forest model
+  - SVC (SVM)                  -> Support Vector Machine model
+  - StandardScaler             -> Feature scaling (normalize karna)
+  - LabelEncoder               -> Categorical data ko numbers mein convert karna
+  - train_test_split           -> Data ko training aur testing mein divide karna
+  - cross_val_score            -> Cross-validation score nikalna
+  - StratifiedKFold            -> K-fold cross-validation (balanced splits)
+  - accuracy_score             -> Model ki accuracy check karna
+  - precision_score            -> Precision metric
+  - recall_score               -> Recall metric
+  - f1_score                   -> F1 score (precision + recall ka balance)
+  - confusion_matrix           -> Prediction results ka matrix
+  - classification_report      -> Detailed classification report
+  - roc_curve                  -> ROC curve ke liye data
+  - auc                        -> Area Under Curve calculate karna
+
+
+================================================================
+2. FRONTEND APP (heart_disease_project.py)
+================================================================
+
+#   Library          Kya kaam karta hai
+--  ---------------  --------------------------------------------------
+1   streamlit        Web frontend / UI (browser mein interface)
+2   pandas           DataFrame handling
+3   numpy            Numerical operations
+4   joblib           Trained model load karna (.pkl files)
+5   plotly           Gauge charts (speedometer style visualization)
+
+
+================================================================
+3. BUILT-IN LIBRARIES (Python mein pehle se hain, install nahi karna)
+================================================================
+
+#   Library          Kya kaam karta hai
+--  ---------------  --------------------------------------------------
+1   sys              Python executable path
+2   os               File paths, environment variables
+3   subprocess       Streamlit auto-launch karna
+4   warnings         Warnings suppress karna
+
+
+================================================================
+SUMMARY
+================================================================
+
+Total External Libraries : 10
+Total Built-in Libraries : 4
+Total                    : 14
+
+Install command: pip install -r requirements.txt
