@@ -1,14 +1,3 @@
-import sys
-import os
-import subprocess
-
-# Agar python se directly run kiya toh automatically streamlit launch karo
-if not os.environ.get("STREAMLIT_RUNNING"):
-    env = os.environ.copy()
-    env["STREAMLIT_RUNNING"] = "1"
-    subprocess.run([sys.executable, "-m", "streamlit", "run", os.path.abspath(__file__)], env=env)
-    sys.exit()
-
 import streamlit as st
 import pandas as pd
 import numpy as np
